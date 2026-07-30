@@ -1,4 +1,4 @@
-import { useRef, useCallback } from 'react';
+import { useRef, useCallback } from "react";
 
 export function useMagnetic(strength = 0.3) {
   const ref = useRef<HTMLElement>(null);
@@ -16,13 +16,14 @@ export function useMagnetic(strength = 0.3) {
 
   const handleMouseLeave = useCallback(() => {
     if (!ref.current) return;
-    ref.current.style.transform = 'translate(0, 0)';
-    ref.current.style.transition = 'transform 0.4s cubic-bezier(0.4, 0, 0.2, 1)';
+    ref.current.style.transform = "translate(0, 0)";
+    ref.current.style.transition =
+      "transform 0.4s cubic-bezier(0.4, 0, 0.2, 1)";
   }, []);
 
   const handleMouseEnter = useCallback(() => {
     if (!ref.current) return;
-    ref.current.style.transition = 'transform 0.1s ease';
+    ref.current.style.transition = "transform 0.1s ease";
   }, []);
 
   return { ref, handleMouseMove, handleMouseLeave, handleMouseEnter };
