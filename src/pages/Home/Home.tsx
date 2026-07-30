@@ -101,7 +101,6 @@ export default function Home() {
                 </Typography>
                 <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
                   <Button
-                    ref={magnetic.ref as React.RefObject<HTMLButtonElement>}
                     onMouseMove={magnetic.handleMouseMove}
                     onMouseLeave={magnetic.handleMouseLeave}
                     onMouseEnter={magnetic.handleMouseEnter}
