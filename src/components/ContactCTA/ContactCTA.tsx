@@ -57,8 +57,9 @@ export default function ContactCTA() {
             variant="body1"
             sx={{ color: "text.secondary", mb: 4, maxWidth: 500, mx: "auto" }}
           >
-            Join 5000+ successful graduates. Enroll today and transform your
-            career with industry-leading training.
+            Empowering businesses with innovative digital solutions. We build
+            modern websites, scalable applications, and impactful digital
+            experiences that drive growth.
           </Typography>
           <Stack
             direction={{ xs: "column", sm: "row" }}

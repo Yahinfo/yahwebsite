@@ -8,17 +8,17 @@ import AnimatedBackground from "../../components/AnimatedBackground/AnimatedBack
 import ParticlesBackground from "../../components/Particles/Particles";
 import Hero3D from "../../components/AnimatedBackground/Hero3D";
 import Counter from "../../components/Counter/Counter";
-import PartnerLogos from "../../components/PartnerLogos/PartnerLogos";
-import About from "../../components/About/About";
+// import PartnerLogos from "../../components/PartnerLogos/PartnerLogos";
+// import About from "../../components/About/About";
 import CourseCard from "../../components/CourseCard/CourseCard";
 import ServiceCard from "../../components/ServiceCard/ServiceCard";
-import Testimonials from "../../components/Testimonials/Testimonials";
+// import Testimonials from "../../components/Testimonials/Testimonials";
 import FAQ from "../../components/FAQ/FAQ";
 import BlogPreview from "../../components/BlogPreview/BlogPreview";
 import ContactCTA from "../../components/ContactCTA/ContactCTA";
 import { getPopularCourses } from "../../constants/courses";
 import { SERVICES } from "../../constants/services";
-import { TESTIMONIALS, FAQS, BLOG_POSTS } from "../../constants/content";
+import { FAQS, BLOG_POSTS } from "../../constants/content";
 import { useMagnetic } from "../../hooks/useMagnetic";
 
 export default function Home() {
@@ -33,7 +33,6 @@ export default function Home() {
         "IT Services",
         "Career Growth",
         "Live Internships",
-        "Placement Support",
       ],
       typeSpeed: 60,
       backSpeed: 40,
@@ -62,7 +61,7 @@ export default function Home() {
 
         <Container maxWidth="lg" sx={{ position: "relative", zIndex: 2 }}>
           <Grid container spacing={4} alignItems="center">
-            <Grid size={{ xs: 12, md: 6 }}>
+            <Grid size={{ xs: 12, md: 7 }}>
               <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -96,7 +95,7 @@ export default function Home() {
                   }}
                 >
                   Transform your career with world-class software training, live
-                  internships, and premium IT services. Join 5000+ successful
+                  internships, and premium IT services. Join successful
                   graduates.
                 </Typography>
                 <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
@@ -137,7 +136,7 @@ export default function Home() {
                 </Stack>
               </motion.div>
             </Grid>
-            <Grid size={{ xs: 12, md: 6 }}>
+            <Grid size={{ xs: 12, md: 5 }}>
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -151,8 +150,8 @@ export default function Home() {
       </Box>
 
       <Counter />
-      <PartnerLogos />
-      <About />
+      {/* <PartnerLogos /> */}
+      {/* <About /> */}
 
       {/* Popular Courses */}
       <Box className="section">
@@ -276,7 +275,7 @@ export default function Home() {
         </Container>
       </Box>
 
-      <Testimonials items={TESTIMONIALS} />
+      {/* <Testimonials items={TESTIMONIALS} /> */}
       <FAQ items={FAQS} />
       <BlogPreview posts={BLOG_POSTS} />
       <ContactCTA />

@@ -4,7 +4,6 @@ import {
   Container,
   Grid,
   Button,
-  Avatar,
   Card,
   CardContent,
   List,
@@ -19,7 +18,6 @@ import AnimatedBackground from "../../components/AnimatedBackground/AnimatedBack
 import TimelineComponent from "../../components/Timeline/Timeline";
 import {
   INTERNSHIP_BENEFITS,
-  MENTORS,
   INTERNSHIP_TIMELINE,
   DAILY_TASKS,
 } from "../../constants/internship";
@@ -195,7 +193,7 @@ export default function Internship() {
       </Box>
 
       {/* Mentors */}
-      <Box sx={{ py: 8, position: "relative", zIndex: 1 }}>
+      {/* <Box sx={{ py: 8, position: "relative", zIndex: 1 }}>
         <Container maxWidth="lg">
           <Typography variant="h3" sx={{ textAlign: "center", mb: 6 }}>
             Meet Your{" "}
@@ -248,7 +246,7 @@ export default function Internship() {
             ))}
           </Grid>
         </Container>
-      </Box>
+      </Box> */}
 
       {/* CTA */}
       <Box sx={{ py: 8, textAlign: "center", position: "relative", zIndex: 1 }}>

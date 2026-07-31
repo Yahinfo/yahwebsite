@@ -43,11 +43,12 @@ export default function About() {
                 variant="body1"
                 sx={{ color: "text.secondary", mb: 3, maxWidth: 500 }}
               >
-                YahTecInfo is a premier software training institute and IT
-                services company dedicated to empowering individuals and
-                businesses with cutting-edge technology skills. With 5000+
-                successful graduates and 50+ industry partners, we bridge the
-                gap between education and employment.
+                YahTecInfo is a fast-growing technology startup offering
+                innovative IT services, industry-focused internship programs,
+                and professional software training courses. We empower students,
+                fresh graduates, and businesses with practical skills,
+                real-world project experience, and modern technology solutions
+                to accelerate careers and drive digital transformation.
               </Typography>
 
               <Typography
