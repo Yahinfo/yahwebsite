@@ -16,7 +16,7 @@ import Photoshops from "../pages/CourseDetails/Photoshop/Photoshop";
 import PHPProgramming from "../pages/CourseDetails/PHPProgramming/PHPProgramming";
 import CPogramming from "../pages/CourseDetails/CPogramming/CPogramming";
 import CppProgramming from "../pages/CourseDetails/CppProgramming/CppProgramming";
-import SCSS from "../pages/CourseDetails/Python/Python";
+// import SCSS from "../pages/CourseDetails/Python/Python";
 import Angular from "../pages/CourseDetails/Angular/Angular";
 import Node from "../pages/CourseDetails/Node/Node";
 import Linux from "../pages/CourseDetails/Linux/Linux";
@@ -28,6 +28,8 @@ import MongoDB from "../pages/CourseDetails/MongoDB/MongoDB";
 import Numpy from "../pages/CourseDetails/MongoDB/MongoDB";
 import Pytest from "../pages/CourseDetails/Pytest/Pytest";
 import UIUx from "../pages/CourseDetails/UIUx/UIUx";
+import SCSS from "../pages/CourseDetails/SCSS/SCSS";
+// import SCSS from "../pages/CourseDetails/Python/Python";
 
 const Home = lazy(() => import("../pages/Home/Home"));
 const Study = lazy(() => import("../pages/Study/Study"));
@@ -47,7 +49,8 @@ const JavaPage = lazy(() => import("../pages/CourseDetails/Java/Java"));
 const SpringBootPage = lazy(
   () => import("../pages/CourseDetails/SpringBoot/SpringBoot"),
 );
-const PythonPage = lazy(() => import("../pages/CourseDetails/Python/Python"));
+const Python = lazy(() => import("../pages/CourseDetails/Python/Python"));
+// const PythonPage = lazy(() => import("../pages/CourseDetails/Python/Python"));
 const AWSPage = lazy(() => import("../pages/CourseDetails/AWS/AWS"));
 const TestingPage = lazy(
   () => import("../pages/CourseDetails/Testing/Testing"),
@@ -124,7 +127,7 @@ export default function AppRoutes() {
           <Route path="/courses/reactjs" element={<ReactJSPage />} />
           <Route path="/courses/java" element={<JavaPage />} />
           <Route path="/courses/springboot" element={<SpringBootPage />} />
-          <Route path="/courses/python" element={<PythonPage />} />
+          <Route path="/courses/python" element={<Python />} />
           <Route path="/courses/aws" element={<AWSPage />} />
           <Route path="/courses/testing" element={<TestingPage />} />
           <Route path="/courses/automation" element={<AutomationPage />} />

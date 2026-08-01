@@ -1,6 +1,12 @@
+// import { getCourseById } from "../../../constants/courses";
+// import CourseDetailsPage from "../CourseDetailsPage";
+
+// export default function SCSS() {
+//   return <CourseDetailsPage course={getCourseById("scss")!} />;
+// }
 import { getCourseById } from "../../../constants/courses";
 import CourseDetailsPage from "../CourseDetailsPage";
 
-export default function SCSS() {
-  return <CourseDetailsPage course={getCourseById("scss")!} />;
+export default function Python() {
+  return <CourseDetailsPage course={getCourseById("python")!} />;
 }
