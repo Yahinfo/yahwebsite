@@ -4,12 +4,10 @@ import {
   Card,
   CardContent,
   Chip,
-  Rating,
   Button,
-  Stack,
 } from "@mui/material";
 import { Link } from "react-router-dom";
-import { FaClock, FaUsers, FaArrowRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useTilt } from "../../hooks/useTilt";
 import { getIcon } from "../../utils";

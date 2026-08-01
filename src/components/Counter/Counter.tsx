@@ -1,43 +1,42 @@
-import { Box, Typography, Grid, Container } from "@mui/material";
-import { useGSAPCounter } from "../../hooks/useGSAP";
-import { STATS } from "../../constants/home";
+import { Box } from "@mui/material";
+// import { useGSAPCounter } from "../../hooks/useGSAP";
 
-function StatCounter({
-  value,
-  suffix,
-  label,
-  prefix,
-}: {
-  value: number;
-  suffix: string;
-  label: string;
-  prefix?: string;
-}) {
-  const ref = useGSAPCounter(value, 2, suffix);
+// function StatCounter({
+//   value,
+//   suffix,
+//   label,
+//   prefix,
+// }: {
+//   value: number;
+//   suffix: string;
+//   label: string;
+//   prefix?: string;
+// }) {
+//   const ref = useGSAPCounter(value, 2, suffix);
 
-  return (
-    <Box sx={{ textAlign: "center" }}>
-      <Typography
-        ref={ref}
-        variant="h2"
-        sx={{
-          fontFamily: '"Space Grotesk", sans-serif',
-          fontWeight: 700,
-          background: "linear-gradient(135deg, #00E5FF, #8B5CF6)",
-          WebkitBackgroundClip: "text",
-          WebkitTextFillColor: "transparent",
-        }}
-      >
-        {prefix}
-        {0}
-        {suffix}
-      </Typography>
-      <Typography variant="body1" sx={{ color: "text.secondary", mt: 1 }}>
-        {label}
-      </Typography>
-    </Box>
-  );
-}
+//   return (
+//     <Box sx={{ textAlign: "center" }}>
+//       <Typography
+//         ref={ref}
+//         variant="h2"
+//         sx={{
+//           fontFamily: '"Space Grotesk", sans-serif',
+//           fontWeight: 700,
+//           background: "linear-gradient(135deg, #00E5FF, #8B5CF6)",
+//           WebkitBackgroundClip: "text",
+//           WebkitTextFillColor: "transparent",
+//         }}
+//       >
+//         {prefix}
+//         {0}
+//         {suffix}
+//       </Typography>
+//       <Typography variant="body1" sx={{ color: "text.secondary", mt: 1 }}>
+//         {label}
+//       </Typography>
+//     </Box>
+//   );
+// }
 
 export default function Counter() {
   return (

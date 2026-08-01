@@ -6,7 +6,6 @@ import {
   Button,
   Stack,
   Chip,
-  Rating,
   Card,
   CardContent,
   Divider,
@@ -16,14 +15,7 @@ import {
   ListItemText,
 } from "@mui/material";
 import { Link } from "react-router-dom";
-import {
-  FaCheck,
-  FaClock,
-  FaUsers,
-  FaCertificate,
-  FaArrowRight,
-  FaPhone,
-} from "react-icons/fa";
+import { FaCheck, FaCertificate, FaArrowRight, FaPhone } from "react-icons/fa";
 import { motion } from "framer-motion";
 import AnimatedBackground from "../../components/AnimatedBackground/AnimatedBackground";
 import FAQ from "../../components/FAQ/FAQ";
