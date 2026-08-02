@@ -38,14 +38,15 @@ export const MEGA_MENU_ITEMS: MegaMenuItem[] = [
 export const COMPANY = {
   name: "YahTecInfo",
   tagline: "Empowering Future Tech Leaders",
-  email: "info@yahtecinfo.com",
-  phone: "+91 98765 43210",
+  email: "yahtechinfo23@gmail.com",
+  phone: "+91 7200101273",
   address: "123 Tech Park, Innovation Hub, Bangalore, Karnataka 560001",
   social: {
-    facebook: "https://facebook.com/yahtecinfo",
+    facebook: "https://www.facebook.com/share/196qksR4J2/",
     twitter: "https://twitter.com/yahtecinfo",
     linkedin: "https://linkedin.com/company/yahtecinfo",
-    instagram: "https://instagram.com/yahtecinfo",
+    instagram: "https://www.instagram.com/yahtechinfo?igsh=dmR3MGNuanJycm5i",
     youtube: "https://youtube.com/yahtecinfo",
+    whatsapp: "https://wa.me/917200101273",
   },
 };

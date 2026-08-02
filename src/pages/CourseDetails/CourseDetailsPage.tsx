@@ -301,7 +301,8 @@ export default function CourseDetailsPage({ course }: CourseDetailsPageProps) {
                   variant="body2"
                   sx={{ color: "text.secondary", mb: 3 }}
                 >
-                  {course.duration} · {course.level}
+                  {/* {course.duration} · */}
+                  {course.level}
                 </Typography>
                 <Divider
                   sx={{ mb: 3, borderColor: "rgba(255,255,255,0.06)" }}

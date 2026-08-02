@@ -25,7 +25,7 @@ const defaultFaqs = (courseName: string) => [
   {
     question: "Is placement assistance provided?",
     answer:
-      "Absolutely! We provide resume building, mock interviews, and direct referrals to our 50+ hiring partners.",
+      "We are committed to supporting your career journey with expert guidance, practical training, and industry-focused mentorship.",
   },
   {
     question: "Can I access recordings?",

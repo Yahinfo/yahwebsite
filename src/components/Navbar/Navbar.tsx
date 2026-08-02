@@ -80,6 +80,7 @@ export default function Navbar() {
                     height: "100%",
                     objectFit: "contain",
                     display: "block",
+                    filter: "drop-shadow(0 0 30px rgba(255, 238, 0, 0.34))",
                   }}
                 />
               </Box>

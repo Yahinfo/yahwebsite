@@ -6,20 +6,19 @@ import {
   Stack,
   Divider,
   IconButton,
-  TextField,
-  Button,
 } from "@mui/material";
 import { Link } from "react-router-dom";
 import {
   FaFacebook,
-  FaTwitter,
+  FaWhatsapp,
+
+  // FaTwitter,
   FaLinkedin,
   FaInstagram,
   FaYoutube,
-  FaArrowRight,
 } from "react-icons/fa";
 import { COMPANY } from "../../constants/nav";
-import { subscribeNewsletter } from "../../services/api";
+// import { subscribeNewsletter } from "../../services/api";
 import { useState } from "react";
 import { Snackbar, Alert } from "@mui/material";
 import Logo from "../../assets/yahtec.png";
@@ -47,30 +46,32 @@ const FOOTER_LINKS = {
 
 const SOCIAL = [
   { icon: FaFacebook, url: COMPANY.social.facebook, label: "Facebook" },
-  { icon: FaTwitter, url: COMPANY.social.twitter, label: "Twitter" },
+  // { icon: FaTwitter, url: COMPANY.social.twitter, label: "Twitter" },
+  { icon: FaWhatsapp, url: COMPANY.social.whatsapp },
+
   { icon: FaLinkedin, url: COMPANY.social.linkedin, label: "LinkedIn" },
   { icon: FaInstagram, url: COMPANY.social.instagram, label: "Instagram" },
   { icon: FaYoutube, url: COMPANY.social.youtube, label: "YouTube" },
 ];
 
 export default function Footer() {
-  const [email, setEmail] = useState("");
+  // const [email, setEmail] = useState("");
   const [snack, setSnack] = useState({
     open: false,
     message: "",
     severity: "success" as "success" | "error",
   });
 
-  const handleSubscribe = async () => {
-    if (!email) return;
-    const result = await subscribeNewsletter(email);
-    setSnack({
-      open: true,
-      message: result.message,
-      severity: result.success ? "success" : "error",
-    });
-    if (result.success) setEmail("");
-  };
+  // const handleSubscribe = async () => {
+  //   if (!email) return;
+  //   const result = await subscribeNewsletter(email);
+  //   setSnack({
+  //     open: true,
+  //     message: result.message,
+  //     severity: result.success ? "success" : "error",
+  //   });
+  //   if (result.success) setEmail("");
+  // };
 
   return (
     <Box
@@ -106,6 +107,7 @@ export default function Footer() {
                       height: "100%",
                       objectFit: "contain",
                       display: "block",
+                      filter: "drop-shadow(0 0 50px rgba(255, 238, 0, 0.34))",
                     }}
                   />
                 </Box>
@@ -202,7 +204,7 @@ export default function Footer() {
             </Grid>
           ))}
 
-          <Grid size={{ xs: 12, md: 2 }}>
+          {/* <Grid size={{ xs: 12, md: 2 }}>
             <Typography variant="h6" sx={{ mb: 2, fontSize: "0.95rem" }}>
               Newsletter
             </Typography>
@@ -226,7 +228,7 @@ export default function Footer() {
                 Subscribe
               </Button>
             </Stack>
-          </Grid>
+          </Grid> */}
         </Grid>
 
         <Divider sx={{ my: 4, borderColor: "rgba(255,255,255,0.06)" }} />

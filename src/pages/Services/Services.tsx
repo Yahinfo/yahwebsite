@@ -1,14 +1,14 @@
-import { useState } from "react";
+// import { useState } from "react";
 import {
   Box,
   Typography,
   Container,
   Grid,
-  TextField,
+  // TextField,
   Button,
   Stack,
-  Snackbar,
-  Alert,
+  // Snackbar,
+  // Alert,
   ImageList,
   ImageListItem,
 } from "@mui/material";
@@ -17,7 +17,8 @@ import AnimatedBackground from "../../components/AnimatedBackground/AnimatedBack
 import ServiceCard from "../../components/ServiceCard/ServiceCard";
 import PricingCard from "../../components/PricingCard/PricingCard";
 import { SERVICES, PRICING_PLANS } from "../../constants/services";
-import { submitQuoteForm } from "../../services/api";
+// import { submitQuoteForm } from "../../services/api";
+import { useNavigate } from "react-router-dom";
 
 const GALLERY = [
   "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=80",
@@ -29,28 +30,31 @@ const GALLERY = [
 ];
 
 export default function Services() {
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    service: "",
-    message: "",
-  });
-  const [snack, setSnack] = useState({
-    open: false,
-    message: "",
-    severity: "success" as "success" | "error",
-  });
+  // const [form, setForm] = useState({
+  //   name: "",
+  //   email: "",
+  //   phone: "",
+  //   service: "",
+  //   message: "",
+  // });
+  const navigate = useNavigate();
+
+  // const [snack, setSnack] = useState({
+  //   open: false,
+  //   message: "",
+  //   severity: "success" as "success" | "error",
+  // });
 
   const handleSubmit = async () => {
-    const result = await submitQuoteForm(form);
-    setSnack({
-      open: true,
-      message: result.message,
-      severity: result.success ? "success" : "error",
-    });
-    if (result.success)
-      setForm({ name: "", email: "", phone: "", service: "", message: "" });
+    // const result = await submitQuoteForm(form);
+    // setSnack({
+    //   open: true,
+    //   message: result.message,
+    //   severity: result.success ? "success" : "error",
+    // });
+    // if (result.success)
+    //   setForm({ name: "", email: "", phone: "", service: "", message: "" });
+    navigate("/contact");
   };
 
   return (
@@ -150,11 +154,11 @@ export default function Services() {
               border: "1px solid rgba(255,255,255,0.08)",
             }}
           >
-            <Typography variant="h4" sx={{ textAlign: "center", mb: 3 }}>
+            {/* <Typography variant="h4" sx={{ textAlign: "center", mb: 3 }}>
               Get a Free Quote
-            </Typography>
+            </Typography> */}
             <Stack spacing={2}>
-              <TextField
+              {/* <TextField
                 label="Name"
                 fullWidth
                 value={form.name}
@@ -185,7 +189,7 @@ export default function Services() {
                 rows={4}
                 value={form.message}
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
-              />
+              /> */}
               <Button
                 variant="contained"
                 size="large"
@@ -195,14 +199,14 @@ export default function Services() {
                   color: "#050505",
                 }}
               >
-                Request Quote
+                Contact Us
               </Button>
             </Stack>
           </Box>
         </Container>
       </Box>
 
-      <Snackbar
+      {/* <Snackbar
         open={snack.open}
         autoHideDuration={4000}
         onClose={() => setSnack({ ...snack, open: false })}
@@ -210,7 +214,7 @@ export default function Services() {
         <Alert severity={snack.severity} variant="filled">
           {snack.message}
         </Alert>
-      </Snackbar>
+      </Snackbar> */}
     </Box>
   );
 }
