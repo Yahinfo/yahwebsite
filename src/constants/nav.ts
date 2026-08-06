@@ -6,6 +6,7 @@ export const NAV_ITEMS: NavItem[] = [
   { label: "Plans", path: "#", hasMegaMenu: true },
   { label: "About", path: "/about" },
   { label: "Contact", path: "/contact" },
+  { label: "Gallery", path: "/gallery" },
 ];
 
 export const MEGA_MENU_ITEMS: MegaMenuItem[] = [
@@ -45,8 +46,9 @@ export const COMPANY = {
     facebook: "https://www.facebook.com/share/196qksR4J2/",
     twitter: "https://twitter.com/yahtecinfo",
     linkedin: "https://linkedin.com/company/yahtecinfo",
-    instagram: "https://www.instagram.com/yahtechinfo?igsh=dmR3MGNuanJycm5i",
-    youtube: "https://youtube.com/yahtecinfo",
+    instagram: "https://www.linkedin.com/in/yahtechinfo/",
+    youtube: "https://youtube.com/@yahtechinfo?si=TmwitnrYWuN1Wb0K",
     whatsapp: "https://wa.me/917200101273",
+    whatsappChannel: "https://whatsapp.com/channel/0029VbDXSRRLo4hfxAHYId1Y",
   },
 };

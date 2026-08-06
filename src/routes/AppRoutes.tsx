@@ -29,6 +29,7 @@ import Numpy from "../pages/CourseDetails/MongoDB/MongoDB";
 import Pytest from "../pages/CourseDetails/Pytest/Pytest";
 import UIUx from "../pages/CourseDetails/UIUx/UIUx";
 import SCSS from "../pages/CourseDetails/SCSS/SCSS";
+import GalleryPage from "../pages/GalleryPage/GalleryPade";
 // import SCSS from "../pages/CourseDetails/Python/Python";
 
 const Home = lazy(() => import("../pages/Home/Home"));
@@ -90,6 +91,7 @@ export default function AppRoutes() {
           <Route path="/internship" element={<Internship />} />
           <Route path="/services" element={<Services />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/courses/html-css" element={<HTMLCSS />} />
