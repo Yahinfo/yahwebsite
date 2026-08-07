@@ -1,7 +1,7 @@
 import { useState } from "react";
 import a from "../../assets/a.jpeg";
 import b from "../../assets/b.jpeg";
-
+import javaoda from "../../assets/javaoda.png";
 import {
   Box,
   Card,
@@ -22,7 +22,7 @@ const galleryData = [
   {
     id: 1,
     title: "Training Session",
-    images: [a, b],
+    images: [a, b, javaoda],
   },
 ];
 
