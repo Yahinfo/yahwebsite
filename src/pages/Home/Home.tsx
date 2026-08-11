@@ -16,6 +16,7 @@ import ServiceCard from "../../components/ServiceCard/ServiceCard";
 import FAQ from "../../components/FAQ/FAQ";
 import BlogPreview from "../../components/BlogPreview/BlogPreview";
 import ContactCTA from "../../components/ContactCTA/ContactCTA";
+import FirstVisitPopup from "../FirstVisitPopup/FirstVisitPopup";
 import { getPopularCourses } from "../../constants/courses";
 import { SERVICES } from "../../constants/services";
 import { FAQS, BLOG_POSTS } from "../../constants/content";
@@ -279,6 +280,7 @@ export default function Home() {
       <FAQ items={FAQS} />
       <BlogPreview posts={BLOG_POSTS} />
       <ContactCTA />
+      <FirstVisitPopup />
     </Box>
   );
 }

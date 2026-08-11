@@ -323,13 +323,43 @@ export default function Contact() {
           </Grid>
         </Grid>
       </Container>
-
+      {/* 
       <Snackbar
         open={snack.open}
         autoHideDuration={4000}
         onClose={() => setSnack({ ...snack, open: false })}
       >
         <Alert severity={snack.severity} variant="filled">
+          {snack.message}
+        </Alert>
+      </Snackbar> */}
+      <Snackbar
+        open={snack.open}
+        autoHideDuration={4000}
+        onClose={() =>
+          setSnack((prev) => ({
+            ...prev,
+            open: false,
+          }))
+        }
+        anchorOrigin={{
+          vertical: "top",
+          horizontal: "right",
+        }}
+      >
+        <Alert
+          severity={snack.severity}
+          variant="filled"
+          onClose={() =>
+            setSnack((prev) => ({
+              ...prev,
+              open: false,
+            }))
+          }
+          sx={{
+            width: "100%",
+          }}
+        >
           {snack.message}
         </Alert>
       </Snackbar>
