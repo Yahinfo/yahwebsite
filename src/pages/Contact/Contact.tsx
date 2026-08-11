@@ -86,7 +86,6 @@ export default function Contact() {
       });
       return;
     }
-
     if (!form.phone.trim()) {
       setSnack({
         open: true,
