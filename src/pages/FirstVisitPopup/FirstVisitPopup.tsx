@@ -305,8 +305,6 @@ function FirstVisitPopup() {
               Start Your Journey
             </Typography>
           </DialogTitle>
-
-          {/* Form */}
           <DialogContent
             sx={{
               pt: "24px !important",
